@@ -1,0 +1,89 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Michael Xilinas</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<input type="checkbox" id="theme-checkbox" />
+	<input type="checkbox" id="hamburger-checkbox" />
+
+	<div class="main">
+		<div class="header">
+
+			<h1>MICHAEL XILINAS</h1>
+
+			<!-- Theme Selector -->
+			<label id="theme-label" for="theme-checkbox">
+				<svg width="60" height="60" viewBox="0 0 24 24">
+					<mask id="moon-mask">
+						<rect x="0" y="0" width="100%" height="100%" fill="white" />
+						<circle id="moon" cx="9" cy="9" r="6" fill="black" />
+					</mask>
+					<circle id="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+					<g id="sun-beams" stroke="currentColor">
+						<line x1="12" y1="1" x2="12" y2="3" />
+						<line x1="12" y1="21" x2="12" y2="23" />
+						<line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+						<line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+						<line x1="1" y1="12" x2="3" y2="12" />
+						<line x1="21" y1="12" x2="23" y2="12" />
+						<line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+						<line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+					</g>
+				</svg>
+			</label>
+
+			<label for="hamburger-checkbox" class="hamburger-label">&#8801;</label>
+
+		</div>
+
+		<div class="centered">
+			<div style="position: relative;">
+				<div class="dropdown">
+					<a href="https://github.com/mxilinas">Github</a>
+					<a href="https://docs.google.com/document/d/1irfIzOSBhY8ymAPG5YgSZCQz5qVtj-jNSn2Zpp6zG4Q/edit?usp=sharing">Resume</a>
+				</div>
+			</div>
+
+			<h2>Hi, I'm Michael</h2>
+			<p>Welcome to my website</p>
+			<div class="container themed">
+				<div class="above">
+					<div class="beside">
+
+						<div class="container">
+							<div class="cube">
+								<div class="face front"></div>
+								<div class="face back"></div>
+								<div class="face top"></div>
+								<div class="face bottom"></div>
+							</div>
+						</div>
+
+						<div class="button-container">
+							<a href="https://github.com/mxilinas" style="margin-bottom: 18px;" draggable="false">Github
+								<span id="arrow">&#x2197;</span>
+							</a>
+							<a href="https://docs.google.com/document/d/1irfIzOSBhY8ymAPG5YgSZCQz5qVtj-jNSn2Zpp6zG4Q/edit?usp=sharing"
+								draggable="false">Resume
+								<span id="arrow">&#x2197;</span>
+							</a>
+						</div>
+					</div>
+					<ul>
+						<li>Programmer</li>
+						<li>Student</li>
+						<li>Skate Instructor</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
