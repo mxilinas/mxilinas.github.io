@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+    --background-secondary: #E5E7EB;
+    --background: #F9FAFB;
+    --background-darker: #D1D5DB;
+    --foreground: #111827;
+    --blue: #2274A5;
+}
+
+/* @media (prefers-color-scheme: dark) { */
+/*   :root { */
+/*     --background: #0a0a0a; */
+/*     --foreground: #ededed; */
+/*   } */
+/* } */
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    /* Firefox only: make scrollbar thinner */
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    /* thumb and track color */
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-noto-sans), Arial, Helvetica, sans-serif;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+}
+
+/* Style the scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 8px;
+    /* Make scrollbar smaller */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Slightly darker for better visibility */
+    border-radius: 10px;
+    /* Round the corners */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Make track invisible */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 100%
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-300px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 4s;
+}
+
+.slide-down {
+    animation-name: slide-down;
+    animation-duration: 1s;
+}
+
+.fade-out {
+    animation-name: fade-out;
+    animation-duration: 2s;
+}
+
+@keyframes grow {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.grow-width {
+    animation-name: grow;
+    animation-duration: 3s;
+}
+
+.grow-height {
+    animation-name: grow;
+    animation-duration: 3s;
+}
+
+@keyframes swing {}
+
+.moon-mask {
+    mask-composite: exclude;
+    -webkit-mask-composite: exclude;
+}
