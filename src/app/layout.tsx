@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto, Noto_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
+    weight: "300",
     subsets: ["latin"],
 });
 
@@ -16,11 +16,13 @@ const notoSans = Noto_Sans({
 
 const geistMono = Geist_Mono({
     variable: "--font-geist-mono",
+    weight: "300",
     subsets: ["latin"],
 });
 
 const roboto = Roboto({
     variable: "--font-roboto",
+    weight: "300",
     subsets: ["latin"],
 });
 
