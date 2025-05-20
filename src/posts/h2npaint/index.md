@@ -5,7 +5,6 @@ image: "/posts/h2npaint/mountains.png"
 tags: ["c#", "unity"]
 ---
 
-# H2NPaint
 **A Unity editor tool for generating 3D terrain from images**
 
 ![](/posts/h2npaint/mountains.png)
@@ -129,9 +128,11 @@ for (int x = 0; x < width; x++)
 
 ```
 
-#### Comparison
-![](/posts/h2npaint/mapgen_exact.png)
-![](/posts/h2npaint/mapgen_city.png)
+### Comparison
+![exact](/posts/h2npaint/exact.png)
+exact
+![city](/posts/h2npaint/city.png)
+city-block
 
 ## Future Work
 - Use a compute shaders to calculate the height and normal maps.

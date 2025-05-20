@@ -1,6 +1,7 @@
 .reactMarkDown {
     font-family: system-ui, sans-serif;
     line-height: 1.75;
+    width: 100%;
 }
 
 .reactMarkDown h1 {
@@ -23,10 +24,11 @@
 }
 
 .reactMarkDown p {
+    white-space: unset;
     font-size: 1.2rem;
     font-weight: 400;
     margin: 1rem 0;
-    white-space: pre-wrap;
+    white-space: normal;
 }
 
 .reactMarkDown a {
@@ -42,7 +44,7 @@
 }
 
 .reactMarkDown ol li::marker {
-  font-weight: 900;
+    font-weight: 900;
 }
 
 .reactMarkDown ul li,
@@ -70,8 +72,8 @@
 }
 
 .reactMarkDown code {
-    background: #f0f0f0;
-    color: #f8f8f2;
+    background: var(--foreground);
+    color: var(--foreground);
     padding: 0.2em 0.4em;
     border-radius: 4px;
     font-family: Menlo, Monaco, 'Courier New', monospace;
@@ -84,21 +86,22 @@
 }
 
 .reactMarkDown img {
-  width: 50%;
-  max-width: 100%;
+    background: var(--background-darker);
+    width: 100%;
+    max-width: 100%;
 }
 
 .reactMarkDown img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 @media (min-width: 768px) {
-  .reactMarkDown img {
-    max-width: 50%;
-  }
+    .reactMarkDown img {
+        max-width: 50%;
+    }
 }
 
 .reactMarkDown table {
