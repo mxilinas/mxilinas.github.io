@@ -19,7 +19,7 @@ function Button({ children }: { children: React.ReactNode }) {
             select-none hang-sign cursor-pointer text-center justify-center
             items-center text-nowrap text-white bg-[#C44536] hover:bg-[#CF5C4F] rounded-sm p-4 w-40
             flex"
-            href="https://docs.google.com/document/d/1czOwrs-lTAq4ViRmZDdKQBMOIy7BVwqIdzcIGbWFC1k/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1C5NmY2OKMy-a8sa1aLFWREWAkWKRLBnS1I-vFNnOfeM/edit?usp=sharing"
         >{children}</a>
     )
 }
