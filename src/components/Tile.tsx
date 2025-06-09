@@ -43,7 +43,7 @@ export default function Tile({ post }: { post: Post }) {
                     </div>
                     <Tags tags={post.metadata.tags} />
                 </div>
-                <div id="image-container" className="relative overflow-hidden
+                <a href={post.slug} id="image-container" className="relative overflow-hidden
                 bg-[var(--background-secondary)] border-3
                 border-[var(--background-darker)] w-full h-full group">
                     {
@@ -58,7 +58,7 @@ export default function Tile({ post }: { post: Post }) {
                             style={{ objectFit: "cover" }}
                         /> : null
                     }
-                </div>
+                </a>
             </div>
         </div>
     )
