@@ -1,3 +1,5 @@
+"use client"
+
 import Tags from "../components/Tags"
 import Image from "next/image"
 import { Post } from "../components/Gallery";
@@ -11,6 +13,14 @@ function TileButton({ children, link }: { children: React.ReactNode, link: strin
             {children}
         </a>
     )
+}
+
+function show_demo(post: Post) {
+    let mobile = window.matchMedia("(width < 90rem)").matches
+    let has_demo = post.metadata.demo
+    if (!mobile && has_demo) {
+        return <TileButton link={post.metadata.demo}>Demo</TileButton> 
+    }
 }
 
 export default function Tile({ post }: { post: Post }) {
@@ -29,7 +39,7 @@ export default function Tile({ post }: { post: Post }) {
                     <div id="tile-buttons" className="flex md:flex-row h-fit
                     md:justify-start md:items-start justify-end space-x-2">
                         <TileButton link={post.slug}>Blog</TileButton>
-                        {post.metadata.demo ? <TileButton link={post.metadata.demo}>Demo</TileButton> : null}
+                        {show_demo(post)}
                     </div>
                     <Tags tags={post.metadata.tags} />
                 </div>
