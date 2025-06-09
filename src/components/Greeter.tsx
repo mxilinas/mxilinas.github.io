@@ -30,7 +30,7 @@ export default function Greeter() {
         href="https://cogsys.ubc.ca">cognitive systems</a>
 
     return (
-        <div id="greeter" className="pb-25 flex flex-col md:flex-row space-x-5 space-y-5">
+        <div id="greeter" className="pb-40 md:pt-40 flex flex-col md:flex-row space-x-5 space-y-5">
             <div>
                 <Image
                     className="select-none aspect-square rounded-full
