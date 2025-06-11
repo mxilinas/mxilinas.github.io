@@ -53,9 +53,9 @@ export default function Gallery() {
             <div className="inline-flex flex-col space-y-6 md:w-fit w-full 
             lg:p-0">
                 <h1 className="pl-4 text-2xl">My Projects</h1>
-                    {posts.map((post, index) => (
-                        <Tile key={post.slug} post={post} />
-                    ))}
+                {posts.map((post, index) => (
+                    <Tile key={post.slug} post={post} />
+                ))}
             </div>
         </div>
     )
